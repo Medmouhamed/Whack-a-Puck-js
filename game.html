@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Puck</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>&#127919; Whack-a-Puck &#127919;</h1>
+        <div class="settings">
+            <label>&#9200; Duration:
+                <input type="number" id="gameDuration" value="30" min="5">
+            </label>
+            <label>&#x1F9E9; Board: 
+                <input type="number" id="boardRows" value="5" min="3"> 
+                <input type="number" id="boardCols" value="5" min="3">
+            </label>
+            <label>&#9889; Speed:
+                <input type="number" id="speed" value="1000" min="200">
+            </label>
+            <button id="startBtn">Start Game</button>
+        </div>
+
+
+        <div class="info">
+            <span>Score: <span id="score">0</span></span>
+            <span>Time: <span id="timer">0</span>s</span>
+        </div>
+
+        <div id="board" class="board"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
